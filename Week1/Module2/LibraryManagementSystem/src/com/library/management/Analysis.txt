@@ -1,0 +1,37 @@
+Linear Search
+
+Description: Linear search is a straightforward search algorithm that checks every element in the list sequentially
+until it finds the target value or reaches the end of the list.
+Time Complexity: O(n) for both the best, average, and worst-case scenarios, where n is the number of elements in the list.
+Use Case: Suitable for small or unsorted lists.
+
+Binary Search
+
+Description: Binary search is a more efficient algorithm that repeatedly divides the search interval in half. It
+requires the list to be sorted.
+Time Complexity:
+Best Case: O(1) if the middle element is the target.
+Average and Worst Case: O(log n), where n is the number of elements in the list.
+Use Case: Suitable for large, sorted lists.
+
+Time Complexity Comparison
+
+Linear Search: O(n)
+
+Best Case: O(1) (if the target is the first element).
+Average and Worst Case: O(n).
+
+Binary Search: O(log n)
+
+Best Case: O(1) (if the middle element is the target).
+Average and Worst Case: O(log n).
+
+When to Use Each Algorithm
+
+Linear Search:
+Use for small or unsorted lists.
+Simpler to implement and doesn't require sorting.
+
+Binary Search:
+Use for large, sorted lists.
+More efficient for searching but requires the list to be sorted, which adds an O(n log n) time complexity for sorting.

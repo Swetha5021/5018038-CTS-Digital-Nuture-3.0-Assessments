@@ -1,0 +1,41 @@
+Arrays in Memory
+
+Memory Representation: Arrays are a collection of elements stored in contiguous memory locations. Each element in the
+array can be accessed using an index.
+
+Advantages:
+Direct Access: Allows direct access to elements via their index, providing O(1) time complexity for accessing elements.
+Fixed Size: Ensures a fixed amount of memory is allocated, which can help in managing resources efficiently.
+Cache-Friendly: Due to their contiguous memory allocation, arrays are cache-friendly, leading to faster access times.
+
+Example of Array Representation in Memory:
+If we have an array int[] arr = {1, 2, 3, 4, 5}, the memory layout will look like this:
+
+Index	Value
+0	    1
+1	    2
+2	    3
+3	    4
+4	    5
+
+Time Complexity of Operations
+
+* Add Operation: O(1) - Adding an element to the end of the array takes constant time, assuming there is space in the array.
+* Search Operation: O(n) - In the worst case, you may need to search through all n elements.
+* Traverse Operation: O(n) - Visiting each element in the array takes linear time.
+* Delete Operation: O(n) - In the worst case, you may need to shift all elements to remove an element from the beginning
+of the array.
+
+Limitations of Arrays
+
+* Fixed Size: Once created, the size of an array cannot be changed. If more elements are needed than initially allocated,
+a new larger array must be created and the elements copied over.
+* Inefficient Deletion and Insertion: Deleting and inserting elements (except at the end) require shifting elements,
+leading to O(n) time complexity.
+* Memory Allocation: Contiguous memory allocation can be problematic if sufficient contiguous memory isn't available.
+
+When to Use Arrays
+
+Known Fixed Size: When the number of elements is known and fixed.
+Fast Access: When fast direct access to elements is required.
+Cache Performance: When memory cache performance is critical.

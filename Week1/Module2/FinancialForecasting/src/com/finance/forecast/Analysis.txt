@@ -1,0 +1,28 @@
+Recursion
+
+Definition: Recursion is a method of solving problems where a function calls itself as a subroutine. This allows the
+function to be repeated several times, as it can call itself during its execution.
+Base Case: The condition under which the recursive function stops calling itself.
+Recursive Case: The part of the function where the function calls itself with modified parameters.
+
+Advantages of Recursion:
+
+Simplifies the code for problems that can naturally be divided into similar subproblems (e.g., factorial, Fibonacci series).
+Easier to understand and implement for certain types of problems.
+
+Disadvantages of Recursion:
+
+Can lead to excessive memory usage and stack overflow if not implemented properly.
+May be less efficient than iterative solutions due to function call overhead.
+
+Time Complexity:
+
+The time complexity of the recursive algorithm is O(n), where n is the number of periods. This is because the function
+makes one recursive call per period until it reaches the base case.
+
+Optimizing the Recursive Solution:
+
+Memoization: Store the results of previous calculations to avoid redundant computations. This can be done using a map
+or an array.
+Iterative Approach: Convert the recursive solution to an iterative one to avoid the overhead of recursive calls and
+reduce memory usage.

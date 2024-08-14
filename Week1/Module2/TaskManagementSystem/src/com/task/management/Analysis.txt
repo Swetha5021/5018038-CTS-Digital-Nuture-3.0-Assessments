@@ -1,0 +1,41 @@
+Types of Linked Lists
+
+Singly Linked List
+
+Description: A singly linked list is a linear data structure where each element, called a node, contains a value and a
+reference (or pointer) to the next node in the sequence.
+
+Structure:
+Each node has two parts: data and next.
+The next pointer points to the next node in the list or null if it is the last node.
+
+Doubly Linked List
+
+Description: A doubly linked list is a linear data structure where each node contains a value and two references
+(or pointers): one to the next node and one to the previous node.
+
+Structure:
+Each node has three parts: data, next, and prev.
+The next pointer points to the next node in the list.
+The prev pointer points to the previous node in the list.
+
+Time Complexity of Operations
+
+Add Operation: O(n) - Adding a task to the end of the list requires traversing the list to find the last node. If
+adding at the head, it would be O(1).
+Search Operation: O(n) - In the worst case, you may need to search through all n nodes.
+Traverse Operation: O(n) - Visiting each node in the list takes linear time.
+Delete Operation: O(n) - In the worst case, you may need to traverse the entire list to find and delete the node.
+
+Advantages of Linked Lists Over Arrays
+
+* Dynamic Size: Linked lists can grow or shrink in size dynamically, which is not possible with arrays.
+* Efficient Insertions/Deletions: Insertions and deletions (especially at the beginning of the list) are more efficient in
+linked lists, as they do not require shifting elements like arrays do.
+* bMemory Utilization: Linked lists do not require a contiguous block of memory, which makes them more flexible in memory allocation.
+
+Limitations of Linked Lists
+
+* Memory Overhead: Linked lists require extra memory for storing pointers/references.
+* Access Time: Linked lists have a higher access time compared to arrays, as they require traversal from the head to the
+desired node.
